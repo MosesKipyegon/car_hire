@@ -1,3 +1,5 @@
+/* font import */
+
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 :root {
@@ -10,10 +12,12 @@
     --n-transparent-white: hsla(0, 0%, 100%, 0.75);
     --n-very-light-gray: hsl(0, 0%, 95%);
 
-    /* font-size */
+    /* font-size desktop */
     --fs-p: 1em;
-    --fs-p-m: 0.635em;
     --fs-h: 2em;
+
+    /* font size mobile */
+    --fs-p-m: 0.635em;
     --fs-h-m: 1.3em;
 
     /* font */
@@ -68,6 +72,7 @@ body {
     color: var(--n-very-light-gray);
     text-transform: uppercase;
     font-size: var(--fs-h);
+    margin-bottom: 30px;
 }
 
 .col__copy {
@@ -75,18 +80,11 @@ body {
     color: var(--n-transparent-white);
     font-size: var(--fs-p);
     line-height: 1.5em;
+    margin-bottom: 60px;
 }
 
 .col__image{
     margin-bottom: 25px;
-}
-
-.col__header {
-    margin-bottom: 30px;
-}
-
-.col__copy {
-    margin-bottom: 60px;
 }
 
 /* Button */
@@ -97,12 +95,10 @@ body {
     padding: .9em 2em;
     border-radius: 2em;
     font-family: var(--ff-p);
-
 }
 
 .col__btn--sedan {
     color: var(--p-bright-orange);
-
 }
 
 .col__btn--sedan:hover {
@@ -113,7 +109,6 @@ body {
 
 .col__btn--suvs {
     color: var(--p-dark-cyan);
-    
 }
 
 .col__btn--suvs:hover {
@@ -139,7 +134,7 @@ body {
     bottom: 0;
 }
 
-/* Mobile View <=375px */
+/* Mobile View media query <=375px */
 
 @media (max-width: 23.4375em) {
     
@@ -154,6 +149,14 @@ body {
         padding: 2em;
     }
 
+    .column__sedan {
+        border-radius: .3em .3em 0 0;
+    }
+
+    .column__luxury {
+        border-radius: 0 0 .3em .3em;
+    }
+
     .col__image {
         max-height: 30px;
         max-width: 54px;
@@ -162,14 +165,6 @@ body {
 
     .col__header {
         margin-bottom: 15px;
-    }
-
-    .column__sedan {
-        border-radius: .3em .3em 0 0;
-    }
-
-    .column__luxury {
-        border-radius: 0 0 .3em .3em;
     }
 
     .col__copy {
