@@ -10,7 +10,7 @@
 
     /* Nuetral */
     --n-transparent-white: hsla(0, 0%, 100%, 0.75);
-    --n-very-light-gray: #E6D2AA;
+    --n-very-light-gray: hsl(0, 0%, 95%);
 
     /* font-size desktop */
     --fs-p: 1em;
