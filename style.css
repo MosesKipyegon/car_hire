@@ -136,7 +136,7 @@ body {
 
 /* Mobile View media query <=375px */
 
-@media (max-width: 23.4375em) {
+@media (max-width: 50em) {
     
     .main_container {
         display: flexbox;
